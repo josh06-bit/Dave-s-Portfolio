@@ -290,6 +290,90 @@ input, select, textarea {
 
 		}
 
+		/*Feature-icon*/
+
+		ul.feature-icons {
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+			margin: 3rem 0;
+			padding-left: 0;
+			
+		}
+	
+			ul.feature-icons:first-child {
+				margin-top: 0;
+			}
+	
+			ul.feature-icons li {
+				margin: 2.5rem 0 0 0;
+				padding: 0.5rem 0 0 4.5rem;
+				position: relative;
+				width: 50%;
+			}
+	
+	
+				ul.feature-icons li:before {
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 512 512'%3E%3Cpath d='M256,0l221.7,128v256L256,512L34.3,384V128L256,0z' fill='rgba(144, 144, 144, 0.1)' /%3E%3C/svg%3E");
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: contain;
+					color: #000000;
+					display: block;
+					font-size: 1.25rem;
+					height: 3.25rem;
+					left: 0;
+					line-height: 3.25rem;
+					position: absolute;
+					text-align: center;
+					top: 0;
+					width: 3.25rem;
+				
+				}
+	
+				ul.feature-icons li i:before {
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' viewBox='0 0 512 512'%3E%3Cpath d='M256,0l221.7,128v256L256,512L34.3,384V128L256,0z' fill='rgba(144, 144, 144, 0.1)' /%3E%3C/svg%3E");
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: contain;
+					color: #000000;
+					display: block;
+					font-size: 1.25rem;
+					height: 3.25rem;
+					left: 0;
+					line-height: 3.25rem;
+					position: absolute;
+					text-align: center;
+					top: 0;
+					width: 3.25rem;
+				
+				}
+	
+				ul.feature-icons li:nth-child(1), ul.feature-icons li:nth-child(2) {
+					margin-top: 0;
+					
+				}
+	
+			@media screen and (max-width: 736px) {
+	
+				ul.feature-icons {
+					margin: 0 0 3rem 0;
+				}
+	
+					ul.feature-icons li {
+						width: 100%;
+					}
+					
+					
+						ul.feature-icons li:nth-child(2) {
+							margin-top: 2rem;
+						}
+	
+			}
+
+
+
+
 /* Row */
 
 	.row {
@@ -2624,7 +2708,8 @@ input, select, textarea {
 		}
 
 		#header strong, #header b {
-			color: #ffffff;
+			color: #d4cfc2;
+			font-weight: bold;
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -2632,7 +2717,7 @@ input, select, textarea {
 		}
 
 		#header h1 {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgb(255, 255, 255);
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
@@ -2650,11 +2735,11 @@ input, select, textarea {
 	}
 
 		#footer .icons a {
-			color: rgba(255, 255, 255, 0.4);
+			color: rgba(255, 255, 255, 0.808);
 		}
 
 	#footer .copyright {
-		color: rgba(255, 255, 255, 0.4);
+		color: #fdfdfd;
 		font-size: 0.8em;
 		list-style: none;
 		margin: 1em 0 0 0;
